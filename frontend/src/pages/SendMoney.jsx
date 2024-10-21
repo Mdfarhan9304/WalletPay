@@ -13,7 +13,7 @@ const SendMoney = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:3000/api/v1/account/transfer",
+        "https://walletpay-idee.onrender.com/api/v1/account/transfer",
         { to: id, amount: amount },
         {
           headers: {

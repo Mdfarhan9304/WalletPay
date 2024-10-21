@@ -12,7 +12,7 @@ const Signup = () => {
   const onSubmit = async (data) => {
     try {
       console.log(data)
-      const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+      const response = await axios.post("https://walletpay-idee.onrender.com/api/v1/user/signup", {
         username: data.username,
         firstName: data.firstName,
         lastName: data.lastName,
