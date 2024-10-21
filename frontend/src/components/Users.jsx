@@ -20,7 +20,7 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/user/bulk?filter=" + debounce)
+      .get("https://walletpay-idee.onrender.com/api/v1/user/bulk?filter=" + debounce)
       .then((response) => {
         setUsers(response.data.user);
       });

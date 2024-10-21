@@ -15,7 +15,7 @@ export const Balance = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/account/balance",
+        "https://walletpay-idee.onrender.com/api/v1/account/balance",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -41,7 +41,7 @@ export const Balance = () => {
       }
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:3000/api/v1/account/add",
+        "https://walletpay-idee.onrender.com/api/v1/account/add",
         { amount: parsedAmount },
         {
           headers: {
